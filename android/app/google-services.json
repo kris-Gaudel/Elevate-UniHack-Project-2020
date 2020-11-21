@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "133575693076",
+    "firebase_url": "https://personal-finance-unihack.firebaseio.com",
+    "project_id": "personal-finance-unihack",
+    "storage_bucket": "personal-finance-unihack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133575693076:android:d249012e04e48380472801",
+        "android_client_info": {
+          "package_name": "com.example.personal_finance_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133575693076-68naoh2t7dp5v38lis9qsk9u3b6mmnpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuZGh4XusZPn1fc5FS0tPauifVL9FZwCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133575693076-68naoh2t7dp5v38lis9qsk9u3b6mmnpa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
