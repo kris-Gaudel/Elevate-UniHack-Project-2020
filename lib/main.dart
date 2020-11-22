@@ -1,6 +1,8 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 //void main() async => runApp(MyApp());
 
@@ -168,7 +170,7 @@ class _RegistrationState extends State<Registration> {
             obscureText: true,
             onChanged: (value) => password = value,
             decoration: InputDecoration(
-              hintText: 'Password',
+              hintText: 'Password - at least 6 characters',
               border: const OutlineInputBorder(),
             ),
           ),
@@ -280,8 +282,35 @@ class Input extends StatefulWidget {
 }
 
 class _InputState extends State<Input> {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final FirebaseFirestore _fireStore = FirebaseFirestore.instance;
+
+  TextEditingController messageController = TextEditingController();
+  ScrollController scrollController = ScrollController();
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color(0xFF19467d),
+        title: Center(
+          child: Padding(
+            padding: const EdgeInsets.only(right: 40.0),
+            child: Text('Elevate your Finances!', style: TextStyle(fontSize: 20.0, fontFamily: 'Montserrat'),),
+          ),
+        ),
+      ),
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            child: Text('Add Invoice', style: TextStyle(fontSize: 20.0, fontFamily: 'Montserrat'),),
+          ),
+          Expanded(
+            child: Text('Add Invoice', style: TextStyle(fontSize: 20.0, fontFamily: 'Montserrat'),),
+          ),
+        ],
+      ),
+    );
   }
 }
+
